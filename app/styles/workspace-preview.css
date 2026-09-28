@@ -164,22 +164,26 @@
     border-radius: 2px;
   }
 
-  .sceneDesk {
-    bottom: 12%;
-    height: 42%;
-  }
-
-  .sceneChair {
-    bottom: 4%;
-    height: 40%;
-  }
-
-  .sceneAccessory {
-    bottom: 44%;
-  }
-
   .scenePlant {
-    bottom: 38%;
+    bottom: 24%;
+    left: 74%;
+  }
+
+  .sceneLamp {
+    bottom: 28%;
+    left: 37%;
+  }
+
+  .sceneDesk {
+    bottom: -4%;
+  }
+
+  .sceneMonitor {
+    bottom: calc(31% - (var(--monitor-index) * 1.5%));
+  }
+
+  .sceneMonitorSingle {
+    bottom: 30%;
   }
 
   .sceneCaption {
