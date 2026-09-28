@@ -1,0 +1,77 @@
+.panel {
+  min-width: 0;
+  padding-top: 3px;
+}
+
+.stepLabel {
+  display: block;
+  margin: 0 0 9px;
+  color: #738576;
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: 0.09em;
+}
+
+.primaryButton {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 0 18px;
+  border: 1px solid var(--forest);
+  border-radius: 2px;
+  background: var(--forest);
+  color: white;
+  font-size: 12px;
+  font-weight: 650;
+  cursor: pointer;
+  transition:
+    background-color 0.16s ease,
+    transform 0.16s ease;
+}
+
+.primaryButton:hover {
+  transform: translateY(-1px);
+  background: #173a2e;
+}
+
+.priceTotal {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.priceLabel {
+  color: #78847a;
+  font-size: 10px;
+}
+
+.priceAmount {
+  font-size: 20px;
+  font-weight: 720;
+}
+
+.priceAmount small {
+  color: #718075;
+  font-size: 10px;
+  font-weight: 450;
+}
+
+@media (max-width: 680px) {
+  .primaryButton {
+    min-height: 43px;
+    padding: 0 14px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 390px) {
+  .priceLabel {
+    font-size: 9px;
+  }
+
+  .priceAmount {
+    font-size: 16px;
+  }
+}

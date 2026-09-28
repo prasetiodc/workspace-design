@@ -1,0 +1,145 @@
+.modalBackdrop {
+  position: fixed;
+  z-index: 20;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  overflow: auto;
+  padding: 20px;
+  background: #162a20a8;
+  backdrop-filter: blur(4px);
+}
+
+.requestModal {
+  position: relative;
+  width: min(100%, 480px);
+  max-height: min(90vh, 790px);
+  overflow: auto;
+  padding: 34px;
+  background: var(--paper);
+  box-shadow: 0 20px 75px #0b1c1666;
+  animation: modalIn 0.2s ease-out both;
+}
+
+.modalClose {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  background: transparent;
+  color: #496051;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.requestModal h2 {
+  max-width: 350px;
+  margin: 0;
+  font-size: 28px;
+  font-weight: 590;
+  line-height: 1.18;
+}
+
+.modalIntro,
+.successCopy {
+  margin: 9px 0 19px;
+  color: #6e7b70;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.requestForm {
+  display: grid;
+  gap: 12px;
+}
+
+.requestForm label {
+  display: grid;
+  gap: 6px;
+  color: #344e3f;
+  font-size: 11px;
+  font-weight: 650;
+}
+
+.requestForm input,
+.requestForm textarea {
+  width: 100%;
+  min-height: 42px;
+  padding: 10px 11px;
+  border: 1px solid #d5ddd2;
+  border-radius: 2px;
+  background: #fffefa;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.requestForm textarea {
+  resize: vertical;
+}
+
+.formTotal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  color: #68786b;
+  font-size: 11px;
+}
+
+.formTotal strong {
+  color: var(--ink);
+  font-size: 16px;
+}
+
+.formSubmit {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.formNote {
+  margin: -4px 0 0;
+  color: #7c877d;
+  font-size: 9px;
+  text-align: center;
+}
+
+.successState {
+  padding: 26px 2px 12px;
+}
+
+.successMark {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 25px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--leaf);
+  color: var(--forest);
+  font-size: 22px;
+}
+
+.successButton {
+  margin-top: 8px;
+}
+
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 680px) {
+  .requestModal {
+    padding: 29px 22px 24px;
+  }
+}

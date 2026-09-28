@@ -1,0 +1,10 @@
+.git/
+.next/
+node_modules/
+out/
+build/
+coverage/
+public/assets/
+package-lock.json
+next-env.d.ts
+*.md

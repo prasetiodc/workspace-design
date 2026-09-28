@@ -1,26 +1,74 @@
 @import "tailwindcss";
+@import "./styles/shared-ui.css";
+@import "./styles/page.css";
+@import "./styles/workspace-preview.css";
+@import "./styles/builder-panel.css";
+@import "./styles/workspace-summary.css";
+@import "./styles/rental-request-dialog.css";
+@import "./styles/product-artwork.css";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --paper: #f6f7f1;
+  --ink: #18372d;
+  --forest: #214b3c;
+  --leaf: #d9e977;
+  --coral: #d96d4e;
+  --line: #dfe4d9;
+  --muted: #77837a;
+  --white: #fffefa;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--paper);
+  --color-foreground: var(--ink);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--coral);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
