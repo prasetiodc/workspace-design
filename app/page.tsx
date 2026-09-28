@@ -12,11 +12,9 @@ export default function Home() {
   return (
     <main className={"appShell"}>
       <header className={"topbar"}>
-        <a className={"brand"} href="#top" aria-label="monis.rent home">
+        <a className={"brand"} href="#top" aria-label="Workspace Builder home">
           <span className={"brandMark"}>m</span>
-          <span>
-            monis<span className={"brandDot"}>.</span>rent
-          </span>
+          <span>Workspace Builder</span>
         </a>
         <div className={"topbarCenter"}>
           <span className={"topbarPin"}>Bali, Indonesia</span>
@@ -85,7 +83,7 @@ export default function Home() {
 
       <footer className={"pageFooter"}>
         <span>Made for the way you work in Bali.</span>
-        <span>monis.rent · Build it. See it. Rent it.</span>
+        <span>Build it. See it. Rent it.</span>
       </footer>
     </main>
   );

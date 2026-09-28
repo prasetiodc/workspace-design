@@ -47,8 +47,7 @@ export const RentalRequestDialog = ({
             <p className={"stepLabel"}>ALL SET</p>
             <h2 id="request-title">Your setup is saved.</h2>
             <p className={"successCopy"}>
-              Your rental request is ready. The monis.rent team will confirm availability and
-              delivery details.
+              Your rental request is ready. Our team will confirm availability and delivery details.
             </p>
             <button
               className={`${"primaryButton"} ${"successButton"}`}

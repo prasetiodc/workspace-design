@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Workspace Builder | monis.rent",
+  title: "Workspace Builder",
   description:
     "Build a Bali workspace that feels like yours. See your setup and rental estimate update as you choose.",
 };
